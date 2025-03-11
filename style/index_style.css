@@ -1,0 +1,81 @@
+body{
+    background-color: rgba(57, 62, 91, 1);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.wraper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+nav{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+}
+.title{
+    font-family:Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    margin: 0px;
+    text-align: center;
+}
+.links{
+    color: white;
+    height: 20px;
+    width: 20px;
+}
+.slider{
+    display:grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap:1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slide{
+    width: 280px;
+    height: 140px;
+    background-color: rgba(124, 105, 127, 1);
+    border-radius: 20px;
+}
+.slide-card{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(124, 105, 127, 1);
+    border-radius: 20px;
+}
+
+footer{
+    margin:10px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    height: 20px;
+    width: 20px;
+    margin-top: 20px;
+    
+}
+
+@font-face{
+    font-family: "Eugusto";
+    src: url(../assets/fonts/EugustoFreePersonalUse-Regular.otf);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    
+}
+@media screen and (min-width:1024px) and (max-width: 1919px){
+    
+}
