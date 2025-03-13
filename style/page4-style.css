@@ -1,0 +1,311 @@
+body{
+    background-color: rgba(57, 62, 91, 1);
+    
+}
+.wraper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+nav{
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+header{
+    position: fixed;
+    left: 0; right: 0; 
+    top: 0;
+    background-color: rgb(38, 41, 60);
+    border-radius: 0px 0px 15px 15px;
+}
+main{
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.title{
+    font-family:Eugusto;
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+    margin: 0px;
+    text-align: center;
+}
+.links{
+    height: 20px;
+    width: 20px;
+}
+.filter-panel {
+    display: none; 
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-family:Eugusto;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+}
+.filter-icon{
+    height: 20px;
+    width: 20px;
+}
+.filter-panel.active {
+    display: block; /* Показываем панель при активации */
+}
+.slider{
+    display:grid;
+    grid-auto-flow: column;
+    scroll-behavior: smooth;
+    gap:1.5rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slide{
+    width: 88vw;
+    background-color: rgba(124, 105, 127, 1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.add{
+    margin: 0 auto;
+    align-items: center;
+}
+.add-img{
+    width: 48vw;
+    height: auto;
+    border-radius: 20px;
+}
+.add-title{
+    font-family:Eugusto;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+.add-text{
+    font-family: Remark;
+    font-size: 11px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+h2{
+    font-family:Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    margin-right: 10px;
+}
+.slide-card{
+    width: 140px;
+    height: 220px;
+    background-color: rgba(124, 105, 127, 1);
+    border-radius: 20px;
+}
+.card-img{
+    width: 140px;
+    height: 130px;
+    border-radius: 20px 20px 0px 0px;
+}
+.title-card{
+    font-family:Eugusto;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.price{
+    font-family: Eugusto;
+    font-size: 12px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+.all-products{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(38, 41, 60);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    margin:10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-footer{
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    margin-bottom: 0px;
+    text-align: center;
+}
+.link{
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+@font-face{
+    font-family: "Eugusto";
+    src: url(../assets/fonts/EugustoFreePersonalUse-Regular.otf);
+}
+@font-face{
+    font-family: "Remark";
+    src: url(../assets/fonts/LTRemark-Regular.otf);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    
+    .title{
+        font-size: 28px;
+    }
+    .links{
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    .filter-icon{
+        height: 25px;
+        width: 25px;
+    }
+    .slide{
+        width: 94vw;
+    }
+    .add-title{
+        font-size: 22px;
+    }
+    .add-text{
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h2{
+        font-size: 22px;
+        margin-top: 40px;
+    }
+    .slide-card{
+        width: 180px;
+        height: 280px;
+    }
+    .card-img{
+        width: 180px;
+        height: 170px;
+    }
+    .title-card{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 16px;
+    }
+    .footer{
+        flex-direction: row;
+    }
+    .text-footer{
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .link{
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .arrow{
+        height: 25px;
+        width: 25px;
+        margin-top: 50px;
+    }
+    footer{
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+    li{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1919px){
+    li{
+        font-size: 18px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .links{
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+    }
+    .filter-icon{
+        height: 30px;
+        width: 30px;
+    }
+    .slide{
+        width: 96vw;
+    }
+    .add-title{
+        font-size: 26px;
+    }
+    .add-text{
+        font-size: 24px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h2{
+        font-size: 26px;
+        margin-top: 40px;
+    }
+    .slide-card{
+        width: 200px;
+        height: 310px;
+    }
+    .card-img{
+        width: 200px;
+        height: 190px;
+    }
+    .title-card{
+        font-size: 20px;
+    }
+    .price{
+        font-size: 18px;
+    }
+    .footer{
+        flex-direction: row;
+    }
+    .text-footer{
+        font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .link{
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .arrow{
+        height: 30px;
+        width: 30px;
+        margin-top: 50px;
+    }
+    footer{
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}
