@@ -1,0 +1,83 @@
+body{
+    background-color:rgb(57, 62, 91, 1);
+}
+.wraper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+main{
+    background-color:rgba(124, 105, 127, 1);
+    padding: 20px 20px;
+    margin: 0 auto;
+    width: 70vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:80px;
+}
+.arrow{
+    margin: 20px 0px 0px 20px;
+    transform: rotate(180deg);
+}
+.title{
+    font-family:Eugusto;
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+}
+.text{
+    font-family:Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    text-align: left;
+}
+input{
+    border-radius: 10px;
+    font-family: Remark;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.179);
+    border-color: white;
+    padding: 5px 5px;
+}
+button{
+    margin-top: 25px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color:rgba(38, 41, 60);
+    font-family:Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+}
+.link{
+    font-family:Eugusto;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+@font-face{
+    font-family: "Eugusto";
+    src: url(../assets/fonts/EugustoFreePersonalUse-Regular.otf);
+}
+@font-face{
+    font-family: "Remark";
+    src: url(../assets/fonts/LTRemark-Regular.otf);
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    main{
+        width: 60vw;
+        top:100px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1919px){
+    main{
+        width: 45vw;
+        top:120px;
+    }
+}
