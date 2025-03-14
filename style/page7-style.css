@@ -1,0 +1,267 @@
+body {
+    background-color: rgba(57, 62, 91, 1);
+
+}
+.wraper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(38, 41, 60);
+    border-radius: 0px 0px 15px 15px;
+}
+
+main {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title {
+    font-family: Eugusto;
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+    margin: 0px;
+    text-align: center;
+}
+
+.links {
+    height: 20px;
+    width: 20px;
+}
+
+.main-title{
+    font-family: Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item{
+    width:50vw;
+    border-radius: 20px;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color:rgba(38, 41, 60);
+    font-family:Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+}
+
+.item-name{
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+.item-description{
+    font-family: Remark;
+    font-size: 15px;
+    color: rgb(252, 252, 252);
+}
+.price{
+    font-family: Eugusto;
+    font-size: 18px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+.purchase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    margin: 20px -8px -8px -8px;
+    padding-bottom: 10px;
+    background-color: rgb(38, 41, 60);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-footer {
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.link {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+@font-face {
+    font-family: "Eugusto";
+    src: url(../assets/fonts/EugustoFreePersonalUse-Regular.otf);
+}
+
+@font-face {
+    font-family: "Remark";
+    src: url(../assets/fonts/LTRemark-Regular.otf);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .title {
+        font-size: 28px;
+    }
+    main{
+        margin-top: 80px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        align-items:normal;
+        margin-top: 40px;
+    }
+    .item{
+        width:48vw;
+    }
+    .card-text{
+        margin-left:15px;
+    }
+    .item-name{
+        font-size: 18px;
+        text-align: left;
+    }
+    .item-description{
+        font-size: 17px;
+    }
+    .purchase{
+        margin-top: 30px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    button{
+        margin-bottom: 40px;
+    }
+    .links {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    .footer {
+        flex-direction: row;
+    }
+
+    .text-footer {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .link {
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        margin-top: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1919px) {
+    main{
+        margin-top: 100px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .links {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+    }
+    .main-title{
+        font-size: 22px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        align-items:normal;
+        margin-top: 50px;
+    }
+    .item{
+        width:48vw;
+    }
+    .card-text{
+        margin-left:15px;
+    }
+    .item-name{
+        font-size: 22px;
+        text-align: left;
+    }
+    .item-description{
+        font-size: 22px;
+    }
+    .purchase{
+        margin-top: 30px;
+    }
+    .price{
+        font-size: 24px;
+    }
+    button{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .footer {
+        flex-direction: row;
+    }
+
+    .text-footer {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .link {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}

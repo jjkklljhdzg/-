@@ -1,0 +1,307 @@
+body {
+    background-color: rgba(57, 62, 91, 1);
+
+}
+
+.wraper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(38, 41, 60);
+    border-radius: 0px 0px 15px 15px;
+}
+
+main {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: Eugusto;
+    font-size: 22px;
+    color: rgb(252, 252, 252);
+    margin: 0px;
+    text-align: center;
+}
+
+.links {
+    height: 20px;
+    width: 20px;
+}
+
+.post {
+    border-radius: 20px;
+    outline-color: white;
+    outline-style: solid;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    width: 70vw;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatarka {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.name-text {
+    margin-left: 20px;
+    font-family: Eugusto;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+}
+
+.post-img {
+    width: 70vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.post-text {
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+}
+
+#more1 {
+    display: none;
+}
+
+#more2 {
+    display: none;
+}
+
+#more3 {
+    display: none;
+}
+
+.button {
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    text-decoration: underline;
+}
+
+.reaction {
+    display: flex;
+    flex-direction: row;
+}
+
+.react {
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-title {
+    font-family: Eugusto;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    margin-top: 10px;
+}
+
+.send {
+    height: 20px;
+    width: 20px;
+    margin-top: 45px;
+    margin-left: 10px;
+}
+
+input {
+    border-radius: 10px;
+    font-family: Remark;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.179);
+    border-color: white;
+    padding: 5px 5px;
+    width: 60vw;
+}
+
+footer {
+    margin: 20px -8px -8px -8px;
+    padding-bottom: 10px;
+    background-color: rgb(38, 41, 60);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-footer {
+    font-family: Remark;
+    font-size: 16px;
+    color: rgb(252, 252, 252);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.link {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+
+@font-face {
+    font-family: "Eugusto";
+    src: url(../assets/fonts/EugustoFreePersonalUse-Regular.otf);
+}
+
+@font-face {
+    font-family: "Remark";
+    src: url(../assets/fonts/LTRemark-Regular.otf);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .title {
+        font-size: 28px;
+    }
+
+    .links {
+        height: 25px;
+        width: 25px;
+        margin-right: 10px;
+    }
+    .post {
+        width: 50vw;
+    }
+    .post-img {
+        width: 50vw;
+    }
+    input {
+        width: 40vw;
+    }
+    .footer {
+        flex-direction: row;
+    }
+
+    .text-footer {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .link {
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer {
+        margin-top: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1919px) {
+    
+
+    .title {
+        font-size: 28px;
+    }
+    .post {
+        width: 50vw;
+    }
+    .post-img {
+        width: 50vw;
+    }
+    input {
+        width: 40vw;
+        font-size: 18px;
+    }
+    .name-text {
+        font-size: 20px;
+    }
+    .post-text {
+        font-size: 20px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    .comment-title {
+        font-size: 18px;
+    }
+    .react {
+        height: 30px;
+        width: 30px;
+    }
+    .send {
+        height: 30px;
+        width: 30px;
+        margin-top: 50px;
+    }
+    .links {
+        height: 30px;
+        width: 30px;
+        margin-right: 20px;
+    }
+
+    .footer {
+        flex-direction: row;
+    }
+
+    .text-footer {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .link {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+}

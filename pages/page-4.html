@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="../style/page4-style.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <header>
+            <nav>
+                <p class="title"><a href="../index.html">Plastic Forge</a></p>
+                <div>
+                    <a href="../pages/page-6.html"><img class="links" src="../assets/images/блог.svg" alt="блог"></a>
+                    <img class="links" src="../assets/images/корзина.svg" alt="корзина">
+                    <a href="../pages/page-2.html"><img class="links" src="../assets/images/профиль.svg"
+                            alt="профиль"></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <img class="filter-icon" onclick="toggleFilter()" src="../assets/images/фильтр.svg">
+            <div class="filter-panel" id="filterPanel">
+                <h2>Фильтры</h2>
+                <ul>
+                    <li><label>
+                            <input type="checkbox" name="category" value="brush" onchange="filterProducts()">
+                            Кисти
+                        </label></li>
+                    <li><label>
+                            <input type="checkbox" name="category" value="tint" onchange="filterProducts()">
+                            Краски
+                        </label></li>
+                    <li><label>
+                            <input type="checkbox" name="category" value="grunt" onchange="filterProducts()"> Грунты
+                        </label></li>
+                    <li><label>
+                            <input type="checkbox" name="category" value="item" onchange="filterProducts()"> Аксессуары
+                        </label></li>
+                </ul>
+
+
+
+            </div>
+            <div class="card" data-category="brush">
+                <h2>Кисти</h2>
+                <div class="slider">
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/набор-кисточек.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Набор кисточек</p>
+                            <p class="price">1000 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/кисть.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Кисть смешанная</p>
+                            <p class="price">259 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/кисть-флейц.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Кисть флейц</p>
+                            <p class="price">199 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/кисть-поролоновая.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Кисть поролоновая</p>
+                            <p class="price">79 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/кисть-овальная.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Кисть овальная</p>
+                            <p class="price">109 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/кисть плоская.jpg" alt="Кисти">
+                        <div class="card-text">
+                            <p class="title-card">Кисть плоская</p>
+                            <p class="price">149 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-category="tint">
+                <h2>Краски</h2>
+                <div class="slider">
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/краска по коже.jpg">
+                        <div class="card-text">
+                            <p class="title-card">Краска по ткани</p>
+                            <p class="price">149 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/краска акриловая.jpg" alt="Краски">
+                        <div class="card-text">
+                            <p class="title-card">Краска акриловая</p>
+                            <p class="price">177 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/краска масляная.jpg" alt="Краски">
+                        <div class="card-text">
+                            <p class="title-card">Краска масляная</p>
+                            <p class="price">257 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/гуашь.jpg" alt="Краски">
+                        <div class="card-text">
+                            <p class="title-card">Гуашь</p>
+                            <p class="price">185 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/белила.jpg" alt="Краски">
+                        <div class="card-text">
+                            <p class="title-card">Белила</p>
+                            <p class="price">390 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card" data-category="tint">
+                        <img class="card-img" src="../assets/images/матовая краска.jpg" alt="Краски">
+                        <div class="card-text">
+                            <p class="title-card">Краска акриловая матовая</p>
+                            <p class="price">149 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-category="grunt">
+                <h2>Грунты</h2>
+                <div class="slider">
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/грунт белый.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт акриловый белый</p>
+                            <p class="price">279 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/грунт черный.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт акриловый чёрный</p>
+                            <p class="price">273 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/грунт коричневый.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт коричнево-серый</p>
+                            <p class="price">207 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/голубой.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт голубовато-серый</p>
+                            <p class="price">209 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/500мл.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт акриловый 500мл</p>
+                            <p class="price">1590 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/1000мл.jpg" alt="Грунты">
+                        <div class="card-text">
+                            <p class="title-card">Грунт акриловый 1000мл</p>
+                            <p class="price">1143 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-category="item">
+                <h2>Аксессуары</h2>
+                <div class="slider">
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/палитра деревянная.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Палитра деревянная</p>
+                            <p class="price">149 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/растушевки.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Набор растушёвок</p>
+                            <p class="price">249 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/мастихин.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Мастихин</p>
+                            <p class="price">299 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/палитра пластиковая.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Палитра пластиковая</p>
+                            <p class="price">163 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/палитра прозрачная.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Палитра прозрачная</p>
+                            <p class="price">299 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                    <div class="slide-card">
+                        <img class="card-img" src="../assets/images/масленка.jpg" alt="Аксессуары">
+                        <div class="card-text">
+                            <p class="title-card">Маслёнка с крышкой</p>
+                            <p class="price">129 ₽</p>
+                            <button>В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p class="text-footer"><a href="../pages/page-1.html">О нас</a></p>
+                <p class="text-footer">Публичная оферта</p>
+                <p class="text-footer">Правила возврата</p>
+                <p class="text-footer">Доставка и оплата</p>
+                <img class="link" src="../assets/images/тг.svg">
+                <img class="link" src="../assets/images/вк.svg">
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/script1.js"></script>
+</body>
+
+</html>
